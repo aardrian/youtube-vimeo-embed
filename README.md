@@ -33,7 +33,11 @@ The unique ID, the _slug_, at the end of both the YouTube and Vimeo URLs is what
 
 The HTML within the custom element is retained, helping ensure if the embed itself is broken or blocked, even after the script successfully runs, the user will still have a valid link and context.
 
-The only variable you can pass in is the aspect ratio. I set `aspect-ratio:16/9` by default, but if you add `data-ratio` to the `<youtube-vimeo-embed>` you can pass in your own value for the property.
+### `data-` Attributes
+
+Add `data-ratio` to the `<youtube-vimeo-embed>` to pass in your own value `aspect-ratio` value for the property. The script sets `aspect-ratio:16/9` by default.
+
+Add `data-poster` to provide your own URL for a poster image (video thumbnail). This means no calls to YouTube or Vimeo. Otherwise it pulls the image provided by YouTube or Vimeo.
 
 ## Examples
 
