@@ -95,6 +95,25 @@ Resulting in:
 <iframe title="Overlays Underwhelm at WordPress Accessibility Day" allow="autoplay" allowfullscreen="" loading="lazy" src="https://www.youtube-nocookie.com/embed/PLXAuxZKKjs" style="aspect-ratio:16/9;width:100%;" srcdoc="<style>body{background-image:url(https://i3.ytimg.com/vi/PLXAuxZKKjs/hqdefault.jpg);background-repeat:no-repeat;background-size:cover;background-position:center center;display:grid;place-items:center;min-height:97dvh;overflow:hidden;}a{display:block;width:96px;height:96px;overflow:hidden;}a:focus{outline:none;}a:focus circle,a:hover circle{fill:#000;}a:focus circle:first-child + circle,a:hover circle:first-child + circle{stroke-dasharray:.4,.4;}a:focus polygon,a:hover polygon{stroke:#fff;stroke-width:.75;}</style><a href=&quot;https://www.youtube-nocookie.com/embed/PLXAuxZKKjs?autoplay=1&amp;start=31&quot;><svg viewBox=&quot;0 0 16 16&quot; width=&quot;96&quot; height=&quot;96&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot;><circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;7.75&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-width=&quot;.5&quot;/><circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;7.25&quot; fill=&quot;none&quot; stroke=&quot;#fff&quot; stroke-width=&quot;.5&quot;/><circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;7&quot; fill=&quot;#0009&quot;/><polygon points=&quot;12, 8 6, 4.5 6, 11.5&quot; fill=&quot;#fff&quot; stroke-linejoin=&quot;round&quot;></polygon></svg>Play</a>"></iframe></youtube-vimeo-embed>
 ```
 
+This example starts 14 seconds in, uses a custom poster image, and sets the aspect ratio to 1:1 because I am convinced the image is more compelling:
+```
+<youtube-vimeo-embed data-poster="https://adrianroselli.com/wp-content/uploads/2024/06/web-components-logo.png" data-ratio="1/1">
+  <p>
+   <a href="https://youtu.be/Sq5oiHjwFxI?start=14">Kevin Powell: Creating Web Components with Dave Rupert</a>, lasting over an hour and a half.
+  </p>
+</youtube-vimeo-embed>
+```
+
+Results in this output:
+```
+<youtube-vimeo-embed data-poster="https://adrianroselli.com/wp-content/uploads/2024/06/web-components-logo.png" data-ratio="1/1">
+  <p>
+   <a href="https://youtu.be/Sq5oiHjwFxI?start=14">Kevin Powell: Creating Web Components with Dave Rupert</a>, lasting over an hour and a half.
+  </p>
+<iframe title="Kevin Powell: Creating Web Components with Dave Rupert" allow="autoplay" allowfullscreen="" loading="lazy" src="https://www.youtube-nocookie.com/embed/Sq5oiHjwFxI" style="aspect-ratio:1/1;width:100%;" srcdoc="<style>body{background-image:url(https://adrianroselli.com/wp-content/uploads/2024/06/web-components-logo.png);background-repeat:no-repeat;background-size:cover;background-position:center center;display:grid;place-items:center;min-height:97dvh;overflow:hidden;}a{display:block;width:96px;height:96px;overflow:hidden;}a:focus{outline:none;}a:focus circle,a:hover circle{fill:#000;}a:focus circle:first-child + circle,a:hover circle:first-child + circle{stroke-dasharray:.4,.4;}a:focus polygon,a:hover polygon{stroke:#fff;stroke-width:.75;}</style><a href=&quot;https://www.youtube-nocookie.com/embed/Sq5oiHjwFxI?autoplay=1&amp;start=14&quot;><svg viewBox=&quot;0 0 16 16&quot; width=&quot;96&quot; height=&quot;96&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; aria-hidden=&quot;true&quot;><circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;7.75&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-width=&quot;.5&quot;/><circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;7.25&quot; fill=&quot;none&quot; stroke=&quot;#fff&quot; stroke-width=&quot;.5&quot;/><circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;7&quot; fill=&quot;#0009&quot;/><polygon points=&quot;12, 8 6, 4.5 6, 11.5&quot; fill=&quot;#fff&quot; stroke-linejoin=&quot;round&quot;></polygon></svg>Play</a>"></iframe></youtube-vimeo-embed>
+```
+
+
 ## More Information
 
 Links with more info:
